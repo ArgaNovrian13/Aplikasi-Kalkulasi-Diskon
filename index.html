@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi Penghitung Diskon</title>
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <!-- CDN Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-zinc-900">
+    <div class="flex justify-center conter-center min-h-screen" id="aplikasi">
+      <div class="mt-8 w-9/12">
+        <h3 class="font-bold text-2xl text-white text-center">
+          Aplikasi Penghitung Diskon
+        </h3>
+        <form action="#" class="mt-10 bg-gray-100 px-16 py-8 rounded-lg">
+          <label for="" class="font-bold">Masukan Harga Asli</label>
+          <br />
+          <input type="number" name="hargaAsli" id="hargaAsli"
+          placeholder="Harga Asli..." class="mt-5 w-11/12 text-xl h-12 mb-7
+          focus:outline-none focus:ring-4 focus:ring-blue-500"" required />
+          <br />
+          <label for="" class="font-bold">Jenis Diskon</label>
+          <select name="" id="jenisDiskon" class="mb-7">
+            <option value="Persentase">Persentase</option>
+            <option value="Nominal">Nominal</option>
+          </select>
+          <br />
+          <label for="" class="font-bold">Besaran Diskon</label>
+          <input type="number" name="hargaAsli" id="besaranDiskon"
+          placeholder="Besaran Diskon..." class="mt-5 w-11/12 text-xl h-12 mb-7
+          focus:outline-none focus:ring-4 focus:ring-blue-500"" required />
+          <button
+            type="submit"
+            class="bg-blue-700 rounded-sm text-xl p-4 hover:bg-green-700 text-center"
+          >
+            Hitung Diskon
+          </button>
+        </form>
+        <h2 class="mt-6 text-xl bg-indigo-50 rounded-lg py-6 px-1 font-serif">
+          Harga Setelah Discount : <span id="hasilDiskon"></span>
+        </h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
